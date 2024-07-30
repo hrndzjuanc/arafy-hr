@@ -37,6 +37,9 @@ class EmployeeResource extends Resource
                     ->label('Teléfono')
                     ->tel()
                     ->required(),
+                Forms\Components\TextInput::make('email')
+                ->email()
+                ->required(),
                 Forms\Components\Textarea::make('address')
                     ->label('Dirección')
                     ->required()
